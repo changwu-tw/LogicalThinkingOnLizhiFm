@@ -46,6 +46,6 @@ if __name__ == '__main__':
         sleep(randint(1, 3))
     browser.quit()
 
-    with open('podcast.json', 'a') as f:
+    with open('podcast.json', 'w') as f:
         f.write(json.dumps(info, ensure_ascii=False))
 
